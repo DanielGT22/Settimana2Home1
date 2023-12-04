@@ -3,6 +3,7 @@ package EssercizioUno;
 import java.util.InputMismatchException;
 import java.util.Random;
 import java.util.Scanner;
+
 public class Primo {
     public static void main(String[] args) {
         Random random = new Random();
@@ -28,13 +29,12 @@ public class Primo {
             }
             System.out.println("In che posizione? ");
             int posizione;
-             try {
-                 posizione = scanner.nextInt();
-             } catch (InputMismatchException e) {
-                 System.out.println("Deve essere un numero Intero");
-                 break;
-             }
-
+            try {
+                posizione = scanner.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Deve essere un numero Intero");
+                break;
+            }
 
             if (posizione >= 1 && posizione <= arr.length + 1) {
                 arr[posizione - 1] = nuovoNumero;
@@ -58,6 +58,7 @@ public class Primo {
 
             if (userInput == 0) {
                 break;
+
             }
         }
     }
